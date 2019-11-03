@@ -327,4 +327,39 @@ has v</panel_attributes>
 + text: String {NotBlank}</panel_attributes>
     <additional_attributes/>
   </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>448</x>
+      <y>343</y>
+      <w>371</w>
+      <h>126</h>
+    </coordinates>
+    <panel_attributes>CompanyRecord
+--
++ name: String {NotBlank}
++ sector: String {NotBlank}
++ ceoName: String {NotBlank}
++ activities: String {NotBlank}
++ web: String {URL}
++ phone: Integer {Pattern(regexp="(\+\d\d\d) (\(\d\d\d\d\)) (\d\d\d\d\d\d(\d)?(\d)?(\d)?)")}
++ email: String {Email}
++ incorporated: Boolean {NotNull}
++ stars: Integer {Size(min=0, max=5)</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>0</x>
+      <y>392</y>
+      <w>182</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>CustomisationParameters
+--
++ spamWords : List&lt;String&gt; {NotNull}
++ Threshold : Double {NotNull}</panel_attributes>
+    <additional_attributes/>
+  </element>
 </diagram>

@@ -90,3 +90,12 @@ master.license.text = \
 	automatically for a maximum of 31 days, and "language" to store your language \
 	preferences. Additionally, we store an item called "returnStack" in your browser's \
 	local storage to keep track of the document to which some buttons must return.
+
+	
+master.menu.anonymous.companyRecords = Company records
+master.menu.administrator.customisationParameters = Customisation parameters
+master.menu.provider.announcement = List Announcement
+master.menu.consumer.announcement = List Announcement
+master.menu.administrator.companyRecords = Company records
+master.menu.provider.companyRecords = Company records 
+master.menu.consumer.companyRecords = Company records 

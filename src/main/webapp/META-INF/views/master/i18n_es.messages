@@ -92,3 +92,10 @@ master.license.text = \
 	lenguage.  Además, almacenamos un ítem llamado "returnStack" en el almacenamiento \
 	local de su navegador para saber dónde tienen que ir algunos botones.
 	
+master.menu.anonymous.companyRecords = Registro de compañias
+master.menu.administrator.customisationParameters = Parametros de personalización
+master.menu.provider.announcement = Listar Anuncios
+master.menu.consumer.announcement = Listar Anuncios 
+master.menu.administrator.companyRecords = Registro de compañias
+master.menu.provider.companyRecords = Registro de compañias
+master.menu.consumer.companyRecords = Registro de compañias
