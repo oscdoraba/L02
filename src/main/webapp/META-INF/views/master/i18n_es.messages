@@ -30,7 +30,7 @@ master.menu.sign-out = Salir
 master.menu.anonymous = Anónimo
 master.menu.anonymous.favourite-link = Enlace favorito
 master.menu.anonymous.investor = Listar Investor Records
-
+master.menu.anonymous.announcement = Listar Anuncios
 
 # master.menu.administrator ###################################################
 
