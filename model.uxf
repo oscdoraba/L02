@@ -1,101 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <diagram program="umlet" version="14.3.0">
   <help_text>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 // Uncomment the following line to change the fontsize and font:
 // fontsize=14
 // fontfamily=SansSerif //possible: SansSerif,Serif,Monospaced
@@ -121,6 +26,7 @@
 
 // This text will be stored with each diagram;  use it for notes.</help_text>
   <zoom_level>7</zoom_level>
+  
   <element>
     <id>UMLClass</id>
     <coordinates>
@@ -416,6 +322,7 @@ m2=*
 has v</panel_attributes>
     <additional_attributes>10.0;10.0;10.0;120.0</additional_attributes>
   </element>
+  
   <element>
     <id>UMLClass</id>
     <coordinates>
@@ -431,6 +338,7 @@ has v</panel_attributes>
 + moment: Date{Temporal(TIMESTAMP), Past}</panel_attributes>
     <additional_attributes/>
   </element>
+  
   <element>
     <id>UMLClass</id>
     <coordinates>
@@ -447,13 +355,51 @@ has v</panel_attributes>
 + text: String {NotBlank}</panel_attributes>
     <additional_attributes/>
   </element>
+  
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>476</x>
-      <y>378</y>
-      <w>210</w>
+      <x>448</x>
+      <y>343</y>
+      <w>371</w>
+      <h>126</h>
+    </coordinates>
+    <panel_attributes>CompanyRecord
+--
++ name: String {NotBlank}
++ sector: String {NotBlank}
++ ceoName: String {NotBlank}
++ activities: String {NotBlank}
++ web: String {URL}
++ phone: Integer {Pattern(regexp="(\+\d\d\d) (\(\d\d\d\d\)) (\d\d\d\d\d\d(\d)?(\d)?(\d)?)")}
++ email: String {Email}
++ incorporated: Boolean {NotNull}
++ stars: Integer {Size(min=0, max=5)</panel_attributes>
+    <additional_attributes/>
+  </element>
+  
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>0</x>
+      <y>392</y>
+      <w>182</w>
       <h>70</h>
+    </coordinates>
+    <panel_attributes>CustomisationParameters
+--
++ spamWords : List&lt;String&gt; {NotNull}
++ Threshold : Double {NotNull}</panel_attributes>
+ <additional_attributes/>
+  </element>
+  
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>448</x>
+      <y>343</y>
+      <w>371</w>
+      <h>126</h>
     </coordinates>
     <panel_attributes>Investor
 --
