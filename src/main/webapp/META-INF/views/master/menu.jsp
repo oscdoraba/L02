@@ -27,7 +27,7 @@
 			<acme:menu-separator/>
 			<acme:menu-suboption code="master.menu.administrator.shutdown" action="/master/shutdown"/>
 			<acme:menu-separator/>
-			<acme:menu-suboption code="master.menu.administrator.announcement" action="/authenticated/announcement/list"/>
+			<acme:menu-suboption code="master.menu.authenticated.announcement" action="/authenticated/announcement/list"/>
 		</acme:menu-option>
 
 		<acme:menu-option code="master.menu.provider" access="hasRole('Provider')">

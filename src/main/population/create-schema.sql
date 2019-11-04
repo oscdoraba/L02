@@ -30,6 +30,17 @@
         primary key (`id`)
     ) engine=InnoDB;
 
+    create table `challenges` (
+       `id` integer not null,
+        `version` integer not null,
+        `deadline` datetime(6),
+        `description` varchar(255),
+        `goal_reward` varchar(255),
+        `level` varchar(255),
+        `title` varchar(255),
+        primary key (`id`)
+    ) engine=InnoDB;
+
     create table `consumer` (
        `id` integer not null,
         `version` integer not null,

@@ -37,6 +37,26 @@
 	<property name="moreInfo" value="http://www.example.com"/>
 	<property name="text" value="This is a very old announcement"/>
 </bean>
-
+<bean id="challenge01" class="acme.entities.challenges.Challenges">
+	<property name="title" value="vaya abuso"/>
+	<property name="deadline" value="2020/07/07 19:10"/>
+	<property name="description" value="premios"/>
+	<property name="goal_reward" value="terminar lvl C/una toalla"/>
+	<property name="level" value="bronce"/>
+</bean>
+<bean id="challenge02" class="acme.entities.challenges.Challenges">
+	<property name="title" value="vaya abuso"/>
+	<property name="deadline" value="2020/07/07 19:10"/>
+	<property name="description" value="premios"/>
+	<property name="goal_reward" value="terminar lvl B/un ipod"/>
+	<property name="level" value="plata"/>
+</bean>
+<bean id="challenge03" class="acme.entities.challenges.Challenges">
+	<property name="title" value="vaya abuso"/>
+	<property name="deadline" value="2020/07/07 19:10"/>
+	<property name="description" value="premios"/>
+	<property name="goal_reward" value="terminar lvl A/un aprobado"/>
+	<property name="level" value="oro"/>
+</bean>
 
 </beans>
