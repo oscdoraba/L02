@@ -28,23 +28,37 @@ master.menu.sign-out = Sign out
 
 master.menu.anonymous = Anonymous
 master.menu.anonymous.favourite-link = Favourite link
+master.menu.anonymous.announcement = List Announcement
+master.menu.anonymous.investor= List Investor
+master.menu.anonymous.companyRecords = List Company records
 
 # master.menu.administrator ###################################################
 
 master.menu.administrator = Administrator
 master.menu.administrator.user-accounts = User accounts
-master.menu.administrator.shutdown = Shut down
 master.menu.administrator.announcement = List Announcement
+master.menu.administrator.investor = List Investor
+master.menu.administrator.companyRecords = List Company records
+master.menu.administrator.customisationParameters = Customisation parameters
+master.menu.administrator.shutdown = Shut down
 
 # master.menu.provider ########################################################
 
 master.menu.provider = Provider
 master.menu.provider.favourite-link = Favourite link
+master.menu.provider.investor = List Investor
+master.menu.provider.announcement = List Announcement
+master.menu.provider.companyRecords = List Company Records 
+
 
 # master.menu.consumer ##########################################################
 
 master.menu.consumer = Consumer
 master.menu.consumer.favourite-link = Favourite link
+master.menu.consumer.announcement = List Announcement
+master.menu.consumer.investor = List Investor
+master.menu.consumer.companyRecords = List Company Records 
+
 
 # master.menu.user-account ####################################################
 
@@ -54,6 +68,8 @@ master.menu.user-account.provider = Provider data
 master.menu.user-account.become-provider = Become a provider
 master.menu.user-account.consumer = Consumer data
 master.menu.user-account.become-consumer = Become a consumer
+master.menu.user-account.investor= List Investors
+
 
 # master.footer ###############################################################
 
@@ -91,11 +107,4 @@ master.license.text = \
 	preferences. Additionally, we store an item called "returnStack" in your browser's \
 	local storage to keep track of the document to which some buttons must return.
 
-	
-master.menu.anonymous.companyRecords = Company records
-master.menu.administrator.customisationParameters = Customisation parameters
-master.menu.provider.announcement = List Announcement
-master.menu.consumer.announcement = List Announcement
-master.menu.administrator.companyRecords = Company records
-master.menu.provider.companyRecords = Company records 
-master.menu.consumer.companyRecords = Company records 
+	master.menu.authenticated=Menu

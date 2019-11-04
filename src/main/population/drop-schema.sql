@@ -33,6 +33,8 @@
 
     drop table if exists `customisation_parameters`;
 
+    drop table if exists `investor`;
+
     drop table if exists `provider`;
 
     drop table if exists `user_account`;

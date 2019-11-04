@@ -88,6 +88,21 @@
 			</list>
 		</property>
 		<property name="threshold" value="1.00" />
-
 	</bean>
+  
+  <bean id="investorRecords1" class="acme.entities.investor.Investor">
+	<property name="name" value="Michael Jordan"/>
+	<property name="sector" value="Futbol"/>
+	<property name="statement" value="En proceso de estudio"/>
+	<property name="stars" value="3"/>
+</bean>
+
+<!-- Metemos este investor records con 10 estrellas para comprobar que esta bien hecho el constraint -->
+<!-- <bean id="investorRecords2" class="acme.entities.investor.Investor"> -->
+<!-- 	<property name="name" value="Carolina Herrera"/> -->
+<!-- 	<property name="sector" value="Baloncesto"/> -->
+<!-- 	<property name="statement" value="Iniciando proyectos"/> -->
+<!-- 	<property name="stars" value="10"/> -->
+<!-- </bean> -->
+  
 </beans>

@@ -22,6 +22,10 @@
 			<acme:menu-suboption code="master.menu.anonymous.favourite-link" action="http://www.example.com/"/>
 			<acme:menu-separator/>
 			<acme:menu-suboption code="master.menu.anonymous.companyRecords" action="/anonymous/companyRecord/list"/>
+			<acme:menu-separator/>
+			<acme:menu-suboption code="master.menu.anonymous.investor" action="/anonymous/investor/list"/>
+			<acme:menu-separator/>
+			<acme:menu-suboption code="master.menu.anonymous.announcement" action="/anonymous/announcement/list"/>
 		</acme:menu-option>
 
 		<acme:menu-option code="master.menu.administrator" access="hasRole('Administrator')">
@@ -34,6 +38,8 @@
 			<acme:menu-suboption code="master.menu.administrator.companyRecords" action="/authenticated/companyRecord/list"/>
 			<acme:menu-separator/>
 			<acme:menu-suboption code="master.menu.administrator.customisationParameters" action="/administrator/customisationParameters/list"/>
+      <acme:menu-separator/>
+			<acme:menu-suboption code="master.menu.administrator.investor" action="/administrator/investor/list"/>
 		</acme:menu-option>
 
 		<acme:menu-option code="master.menu.provider" access="hasRole('Provider')">
@@ -42,6 +48,8 @@
 			<acme:menu-suboption code="master.menu.provider.announcement" action="/authenticated/announcement/list"/>
 			<acme:menu-separator/>
 			<acme:menu-suboption code="master.menu.provider.companyRecords" action="/authenticated/companyRecord/list"/>
+			<acme:menu-separator/>
+			<acme:menu-suboption code="master.menu.provider.investor" action="/authenticated/investor/list"/>
 		</acme:menu-option>
 
 		<acme:menu-option code="master.menu.consumer" access="hasRole('Consumer')">
@@ -50,9 +58,15 @@
 			<acme:menu-suboption code="master.menu.consumer.announcement" action="/authenticated/announcement/list"/>
 			<acme:menu-separator/>
 			<acme:menu-suboption code="master.menu.consumer.companyRecords" action="/authenticated/companyRecord/list"/>
+			<acme:menu-separator/>
+			<acme:menu-suboption code="master.menu.consumer.investor" action="/authenticated/investor/list"/>
 		</acme:menu-option>
 	
-		
+		<acme:menu-option code="master.menu.authenticated" access="isAuthenticated()">
+			<acme:menu-suboption code="master.menu.consumer.favourite-link" action="http://www.example.com/"/>
+			<acme:menu-separator/>
+			<acme:menu-suboption code="master.menu.user-account.investor" action="/authenticated/investor/list"/>
+		</acme:menu-option>
 		
 	</acme:menu-left>
 
@@ -71,4 +85,3 @@
 		<acme:menu-option code="master.menu.sign-out" action="/master/sign-out" access="isAuthenticated()"/>
 	</acme:menu-right>
 </acme:menu-bar>
-

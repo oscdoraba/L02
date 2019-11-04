@@ -59,6 +59,14 @@
         `version` integer not null,
         `spam_words` tinyblob,
         `threshold` double precision,
+
+    create table `investor` (
+       `id` integer not null,
+        `version` integer not null,
+        `name` varchar(255),
+        `sector` varchar(255),
+        `stars` integer,
+        `statement` varchar(255),
         primary key (`id`)
     ) engine=InnoDB;
 
