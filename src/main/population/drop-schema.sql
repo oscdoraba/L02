@@ -27,7 +27,13 @@
 
     drop table if exists `authenticated`;
 
+    drop table if exists `company_record`;
+
     drop table if exists `consumer`;
+
+    drop table if exists `customisation_parameters`;
+
+    drop table if exists `investor`;
 
     drop table if exists `provider`;
 
