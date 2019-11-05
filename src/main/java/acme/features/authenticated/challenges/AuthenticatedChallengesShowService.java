@@ -45,7 +45,7 @@ public class AuthenticatedChallengesShowService implements AbstractShowService<A
 		assert entity != null;
 		assert model != null;
 
-		request.unbind(entity, model, "title", "deadline", "description", "goal_reward", "level");
+		request.unbind(entity, model, "title", "moment", "description", "goal1", "reward1", "goal2", "reward2", "goal3", "reward3");
 	}
 
 	@Override

@@ -25,15 +25,27 @@ public class Challenges extends DomainEntity {
 
 	@Temporal(TemporalType.TIMESTAMP)
 	@Future
-	private Date				deadline;
+	private Date				moment;
 
 	@NotBlank
 	private String				description;
 
 	@NotBlank
-	private String				goal_reward;
+	private String				goal1;
 
 	@NotBlank
-	private String				level;
+	private String				reward1;
+
+	@NotBlank
+	private String				goal2;
+
+	@NotBlank
+	private String				reward2;
+
+	@NotBlank
+	private String				goal3;
+
+	@NotBlank
+	private String				reward3;
 
 }

@@ -17,9 +17,13 @@
 
 <acme:form readonly="true">
 	<acme:form-textbox code="authenticated.challenges.form.label.title" path="title" />
-	<acme:form-moment code="authenticated.challenges.form.label.deadline" path="deadline" />
+	<acme:form-moment code="authenticated.challenges.form.label.moment" path="moment" />
 	<acme:form-textbox code="authenticated.challenges.form.label.description" path="description" />
-	<acme:form-textbox code="authenticated.challenges.form.label.goal_reward" path="goal_reward" />
-	<acme:form-textbox code="authenticated.challenges.form.label.level" path="level" />
+	<acme:form-textbox code="authenticated.challenges.form.label.goal1" path="goal1" />
+	<acme:form-textbox code="authenticated.challenges.form.label.reward1" path="reward1" />
+	<acme:form-textbox code="authenticated.challenges.form.label.goal2" path="goal2" />
+	<acme:form-textbox code="authenticated.challenges.form.label.reward2" path="reward2" />
+	<acme:form-textbox code="authenticated.challenges.form.label.goal3" path="goal3" />
+	<acme:form-textbox code="authenticated.challenges.form.label.reward3" path="reward3" />
 	<acme:form-return code="authenticated.challenges.form.button.return" />
 </acme:form>

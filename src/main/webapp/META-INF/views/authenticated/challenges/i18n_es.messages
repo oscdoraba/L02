@@ -11,12 +11,16 @@
 authenticated.challenges.form.label.title= Titulo:
 authenticated.challenges.form.label.moment= Momento:
 authenticated.challenges.form.label.description=Descripcion:
-authenticated.challenges.form.label.goal_reward= Objetivo_Recompensa:
-authenticated.challenges.form.label.level= Nivel:
+authenticated.challenges.form.label.goal1= Objetivo para oro:
+authenticated.challenges.form.label.reward1= Recompensa para oro:
+authenticated.challenges.form.label.goal2= Objetivo para plata:
+authenticated.challenges.form.label.reward2= Recompensa para plata:
+authenticated.challenges.form.label.goal3= Objetivo para bronce:
+authenticated.challenges.form.label.reward3= Recompensa para plata:
 authenticated.challenges.form.button.return= Volver
 
 
 authenticated.challenges.list.label.moment= Momento
 authenticated.challenges.list.label.title= Titulo
-authenticated.challenges.list.label.goal_reward= Objetivo_Recompensa
-authenticated.challenges.list.label.level= Nivel
+authenticated.challenges.list.label.description= Descripción
+

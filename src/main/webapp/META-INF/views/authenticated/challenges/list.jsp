@@ -16,8 +16,7 @@
 <%@taglib prefix="acme" tagdir="/WEB-INF/tags"%>
 
 <acme:list>
-	<acme:list-column code="authenticated.challenges.list.label.deadline" path="deadline" width="20%" />
+	<acme:list-column code="authenticated.challenges.list.label.moment" path="moment" width="10%" />
 	<acme:list-column code="authenticated.challenges.list.label.title" path="title" width="20%" />
-	<acme:list-column code="authenticated.challenges.list.label.goal_reward" path="goal_reward" width="20%" />
-	<acme:list-column code="authenticated.challenges.list.label.level" path="level" width="20%" />
+	<acme:list-column code="authenticated.challenges.list.label.description" path="description" width="10%" />
 </acme:list>

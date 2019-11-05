@@ -330,8 +330,8 @@ has v</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>160</x>
-      <y>485</y>
+      <x>170</x>
+      <y>495</y>
       <w>200</w>
       <h>80</h>
     </coordinates>
@@ -341,9 +341,12 @@ has v</panel_attributes>
 + title: String {NotBlank}
 + deadline: Date {Temporal (TIMESTAMP), Future}
 + description : String {NotBlank}
-+ goal_reward: String {NotBlank}
-+ level: String {NotBlank}
-
++ goal1: String {NotBlank}
++ goal2: String {NotBlank}
++ goal3: String {NotBlank}
++ reward1: String {NotBlank}
++ reward2: String {NotBlank}
++ reward3: String {NotBlank}
 </panel_attributes>
     <additional_attributes/>
   </element>
