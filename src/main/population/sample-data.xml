@@ -38,5 +38,33 @@
 	<property name="text" value="This is a very old announcement"/>
 </bean>
 
+<bean id="requests01" class="acme.entities.requests.Requests">
+	<property name="title" value="Request 01"/>
+	<property name="moment" value="2019/06/10 10:35"/>
+	<property name="deadline" value="2020/06/10 9:30"/>
+	<property name="description" value="This is a request"/>
+	<property name="reward" value="One car"/>
+	<property name="ticker" value="RXXXX-99999"/>
+</bean>
+
+<bean id="requests02" class="acme.entities.requests.Requests">
+	<property name="title" value="Request 02"/>
+	<property name="moment" value="2019/06/10 00:00"/>
+	<property name="deadline" value="2020/06/11 9:30"/>
+	<property name="description" value="This is a request"/>
+	<property name="reward" value="One enum"/>
+	<property name="ticker" value="RXXXX-99999"/>
+</bean>
+
+<bean id="requests03" class="acme.entities.requests.Requests">
+	<property name="title" value="Request 03"/>
+	<property name="moment" value="1900/10/10 19:10"/>
+	<property name="deadline" value="2020/06/12 9:30"/>
+	<property name="description" value="This is a request very old"/>
+	<property name="reward" value="2500 dollars"/>
+	<property name="ticker" value="RXXXX-99999"/>
+</bean>
+
+
 
 </beans>
