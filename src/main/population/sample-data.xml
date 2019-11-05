@@ -39,4 +39,33 @@
 </bean>
 
 
+
+<bean id="offer01" class="acme.entities.offers.Offer">
+	<property name="title" value="Sample offer 01"/>
+	<property name="moment" value="2019/06/10 9:35"/>
+	<property name="deadline" value="2019/11/10 7:35"/>
+	<property name="description" value="This is the description of the offer 01 made by DAGA"/>
+    <property name="moneyReward" value="€ 103.3"/>
+	<property name="ticker" value="OBCDX-99699"/>
+</bean>
+
+<bean id="offer02" class="acme.entities.offers.Offer">
+	<property name="title" value="Sample offer 02"/>
+	<property name="moment" value="2019/06/10 8:25"/>
+	<property name="deadline" value="2019/11/7 7:15"/>
+	<property name="description" value="This is the description of the offer 02 made by DAGA"/>
+	<property name="moneyReward" value="€ 300.3"/>
+	<property name="ticker" value="ODDDD-73458"/>
+</bean>
+
+<bean id="offer03" class="acme.entities.offers.Offer">
+	<property name="title" value="Sample offer 03"/>
+	<property name="moment" value="2019/06/10 6:27"/>
+	<property name="deadline" value="2019/11/10 8:40"/>
+	<property name="description" value="This is the description of the offer 03 made by DAGA"/>
+	<property name="moneyReward" value="€ 200.5"/>
+	<property name="ticker" value="OKLMN-99999"/>
+</bean>
+
+
 </beans>

@@ -327,4 +327,23 @@ has v</panel_attributes>
 + text: String {NotBlank}</panel_attributes>
     <additional_attributes/>
   </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>469</x>
+      <y>385</y>
+      <w>245</w>
+      <h>84</h>
+    </coordinates>
+    <panel_attributes>Offer
+--
++ title: String {NotBlank}
++ moment: Date{Temporal(TIMESTAMP), Past}
++ deadline: Date{Temporal(TIMESTAMP), Future}
++ description: String {NotBlank}
++ moneyReward: Money {NotNull}
++ ticker: String {NotBlank, Pattern("O\\w{4}\\-\\d{5}")}
+</panel_attributes>
+    <additional_attributes/>
+  </element>
 </diagram>
