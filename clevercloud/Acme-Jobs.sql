@@ -124,34 +124,6 @@ INSERT INTO `authenticated` VALUES (5,0,3);
 UNLOCK TABLES;
 
 --
--- Table structure for table `campos_iglesia_bulletin`
---
-
-DROP TABLE IF EXISTS `campos_iglesia_bulletin`;
-/*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
-CREATE TABLE `campos_iglesia_bulletin` (
-  `id` int(11) NOT NULL,
-  `version` int(11) NOT NULL,
-  `dorsal` int(11) DEFAULT NULL,
-  `equipo` varchar(255) DEFAULT NULL,
-  `nacimiento` datetime(6) DEFAULT NULL,
-  `patrocinador` varchar(255) DEFAULT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
-/*!40101 SET character_set_client = @saved_cs_client */;
-
---
--- Dumping data for table `campos_iglesia_bulletin`
---
-
-LOCK TABLES `campos_iglesia_bulletin` WRITE;
-/*!40000 ALTER TABLE `campos_iglesia_bulletin` DISABLE KEYS */;
-INSERT INTO `campos_iglesia_bulletin` VALUES (10,0,10,'Sevilla','1996-08-22 03:00:00.000000','Adidas'),(11,0,10,'SevillaFC','2019-10-22 16:03:55.074000','Adidas');
-/*!40000 ALTER TABLE `campos_iglesia_bulletin` ENABLE KEYS */;
-UNLOCK TABLES;
-
---
 -- Table structure for table `challenges`
 --
 
@@ -161,10 +133,14 @@ DROP TABLE IF EXISTS `challenges`;
 CREATE TABLE `challenges` (
   `id` int(11) NOT NULL,
   `version` int(11) NOT NULL,
-  `deadline` datetime(6) DEFAULT NULL,
   `description` varchar(255) DEFAULT NULL,
-  `goal_reward` varchar(255) DEFAULT NULL,
-  `level` varchar(255) DEFAULT NULL,
+  `goal1` varchar(255) DEFAULT NULL,
+  `goal2` varchar(255) DEFAULT NULL,
+  `goal3` varchar(255) DEFAULT NULL,
+  `moment` datetime(6) DEFAULT NULL,
+  `reward1` varchar(255) DEFAULT NULL,
+  `reward2` varchar(255) DEFAULT NULL,
+  `reward3` varchar(255) DEFAULT NULL,
   `title` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
@@ -177,6 +153,38 @@ CREATE TABLE `challenges` (
 LOCK TABLES `challenges` WRITE;
 /*!40000 ALTER TABLE `challenges` DISABLE KEYS */;
 /*!40000 ALTER TABLE `challenges` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `company_record`
+--
+
+DROP TABLE IF EXISTS `company_record`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `company_record` (
+  `id` int(11) NOT NULL,
+  `version` int(11) NOT NULL,
+  `activities` varchar(255) DEFAULT NULL,
+  `ceo_name` varchar(255) DEFAULT NULL,
+  `email` varchar(255) DEFAULT NULL,
+  `incorporated` bit(1) DEFAULT NULL,
+  `name` varchar(255) DEFAULT NULL,
+  `phone` varchar(255) DEFAULT NULL,
+  `sector` varchar(255) DEFAULT NULL,
+  `stars` int(11) DEFAULT NULL,
+  `web` varchar(255) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `company_record`
+--
+
+LOCK TABLES `company_record` WRITE;
+/*!40000 ALTER TABLE `company_record` DISABLE KEYS */;
+/*!40000 ALTER TABLE `company_record` ENABLE KEYS */;
 UNLOCK TABLES;
 
 --
@@ -208,6 +216,60 @@ LOCK TABLES `consumer` WRITE;
 UNLOCK TABLES;
 
 --
+-- Table structure for table `customisation_parameters`
+--
+
+DROP TABLE IF EXISTS `customisation_parameters`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `customisation_parameters` (
+  `id` int(11) NOT NULL,
+  `version` int(11) NOT NULL,
+  `spam_words` tinyblob,
+  `threshold` double DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `customisation_parameters`
+--
+
+LOCK TABLES `customisation_parameters` WRITE;
+/*!40000 ALTER TABLE `customisation_parameters` DISABLE KEYS */;
+/*!40000 ALTER TABLE `customisation_parameters` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `ganan_garcia_bulletin`
+--
+
+DROP TABLE IF EXISTS `ganan_garcia_bulletin`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `ganan_garcia_bulletin` (
+  `id` int(11) NOT NULL,
+  `version` int(11) NOT NULL,
+  `dorsal` int(11) DEFAULT NULL,
+  `fecha_inscripcion` datetime(6) DEFAULT NULL,
+  `goles` int(11) DEFAULT NULL,
+  `nombre` varchar(255) DEFAULT NULL,
+  `partidos_jugados` int(11) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `ganan_garcia_bulletin`
+--
+
+LOCK TABLES `ganan_garcia_bulletin` WRITE;
+/*!40000 ALTER TABLE `ganan_garcia_bulletin` DISABLE KEYS */;
+INSERT INTO `ganan_garcia_bulletin` VALUES (10,0,10,'2019-08-09 08:00:00.000000',250,'David Ganan Garcia',200);
+/*!40000 ALTER TABLE `ganan_garcia_bulletin` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
 -- Table structure for table `hibernate_sequence`
 --
 
@@ -227,6 +289,63 @@ LOCK TABLES `hibernate_sequence` WRITE;
 /*!40000 ALTER TABLE `hibernate_sequence` DISABLE KEYS */;
 INSERT INTO `hibernate_sequence` VALUES (6);
 /*!40000 ALTER TABLE `hibernate_sequence` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `investor`
+--
+
+DROP TABLE IF EXISTS `investor`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `investor` (
+  `id` int(11) NOT NULL,
+  `version` int(11) NOT NULL,
+  `name` varchar(255) DEFAULT NULL,
+  `sector` varchar(255) DEFAULT NULL,
+  `stars` int(11) DEFAULT NULL,
+  `statement` varchar(255) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `investor`
+--
+
+LOCK TABLES `investor` WRITE;
+/*!40000 ALTER TABLE `investor` DISABLE KEYS */;
+/*!40000 ALTER TABLE `investor` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `offer`
+--
+
+DROP TABLE IF EXISTS `offer`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `offer` (
+  `id` int(11) NOT NULL,
+  `version` int(11) NOT NULL,
+  `deadline` datetime(6) DEFAULT NULL,
+  `description` varchar(255) DEFAULT NULL,
+  `moment` datetime(6) DEFAULT NULL,
+  `money_reward_amount` double DEFAULT NULL,
+  `money_reward_currency` varchar(255) DEFAULT NULL,
+  `ticker` varchar(255) DEFAULT NULL,
+  `title` varchar(255) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `offer`
+--
+
+LOCK TABLES `offer` WRITE;
+/*!40000 ALTER TABLE `offer` DISABLE KEYS */;
+/*!40000 ALTER TABLE `offer` ENABLE KEYS */;
 UNLOCK TABLES;
 
 --
@@ -255,6 +374,35 @@ CREATE TABLE `provider` (
 LOCK TABLES `provider` WRITE;
 /*!40000 ALTER TABLE `provider` DISABLE KEYS */;
 /*!40000 ALTER TABLE `provider` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `requests`
+--
+
+DROP TABLE IF EXISTS `requests`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `requests` (
+  `id` int(11) NOT NULL,
+  `version` int(11) NOT NULL,
+  `deadline` datetime(6) DEFAULT NULL,
+  `description` varchar(255) DEFAULT NULL,
+  `moment` datetime(6) DEFAULT NULL,
+  `reward` varchar(255) DEFAULT NULL,
+  `ticker` varchar(255) DEFAULT NULL,
+  `title` varchar(255) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `requests`
+--
+
+LOCK TABLES `requests` WRITE;
+/*!40000 ALTER TABLE `requests` DISABLE KEYS */;
+/*!40000 ALTER TABLE `requests` ENABLE KEYS */;
 UNLOCK TABLES;
 
 --
@@ -338,7 +486,7 @@ CREATE TABLE `user_account` (
 
 LOCK TABLES `user_account` WRITE;
 /*!40000 ALTER TABLE `user_account` DISABLE KEYS */;
-INSERT INTO `user_account` VALUES (1,0,_binary '\0','john.doe@acme.com','John','Doe','$2a$05$IiQm9x3pKGQeqY6dGHoIyOeSOCgkPEjVU4WG5M/FTqipgRDs7hj3S','anonymous'),(3,0,_binary '','administrator@acme.com','Administrator','Acme.com','$2a$05$mODzPe03JEA9l1jAUPElAOVbEHGmDdW0unkdcPaTfQSooDk1zfbjK','administrator');
+INSERT INTO `user_account` VALUES (1,0,_binary '\0','john.doe@acme.com','John','Doe','$2a$05$whrRbd.FUXHmBSiZ2Tn6LuI.0GcR/Oal4fCmGJf1e/gZ3TiiOu/bK','anonymous'),(3,0,_binary '','administrator@acme.com','Administrator','Acme.com','$2a$05$haOReTT1D18VS1rzB3uCyufFXV99Xk9OVXTHryPY.5yLi.OK26s1e','administrator');
 /*!40000 ALTER TABLE `user_account` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -351,4 +499,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2019-11-04 16:26:00
+-- Dump completed on 2019-11-05 18:45:30
