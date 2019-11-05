@@ -32,6 +32,26 @@
 		<property name="moreInfo" value="http://www.example.com" />
 		<property name="text" value="This is a very old announcement" />
 	</bean>
+	
+	<!-- Estos dos announcements solo deberian aparecer para los anonimos  -->
+	
+	<bean id="announcement04" class="acme.entities.announcements.Announcement">
+		<property name="title" value="Sample announcement 04" />
+		<property name="moment" value="2019/04/13 10:35" /> 
+		<property name="moreInfo">
+			<null />
+		</property>
+		<property name="text" value="This is the description of a sample announcement" />
+	</bean>
+	
+	<bean id="announcement05" class="acme.entities.announcements.Announcement"> 
+		<property name="title" value="Sample announcement 05" />
+		<property name="moment" value="2019/04/20 10:35" /> 
+		<property name="moreInfo">
+			<null />
+		</property>
+		<property name="text" value="This is the description of a sample announcement" />
+	</bean>
 
 	<bean id="companyrecord1" class="acme.entities.companyRecords.CompanyRecord">
 		<property name="name" value="Company record 1" />
@@ -97,6 +117,11 @@
 	<property name="stars" value="3"/>
 </bean>
 
+  <bean id="investorRecords2" class="acme.entities.investor.Investor">
+	<property name="name" value="James Hardem"/>
+	<property name="sector" value="Beisbol"/>
+	<property name="statement" value="En proceso de estudio"/>
+</bean>
 <!-- Metemos este investor records con 10 estrellas para comprobar que esta bien hecho el constraint -->
 <!-- <bean id="investorRecords2" class="acme.entities.investor.Investor"> -->
 <!-- 	<property name="name" value="Carolina Herrera"/> -->

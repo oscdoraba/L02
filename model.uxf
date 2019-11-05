@@ -26,7 +26,6 @@
 
 // This text will be stored with each diagram;  use it for notes.</help_text>
   <zoom_level>7</zoom_level>
-  
   <element>
     <id>UMLClass</id>
     <coordinates>
@@ -322,7 +321,6 @@ m2=*
 has v</panel_attributes>
     <additional_attributes>10.0;10.0;10.0;120.0</additional_attributes>
   </element>
-  
   <element>
     <id>UMLClass</id>
     <coordinates>
@@ -338,7 +336,6 @@ has v</panel_attributes>
 + moment: Date{Temporal(TIMESTAMP), Past}</panel_attributes>
     <additional_attributes/>
   </element>
-  
   <element>
     <id>UMLClass</id>
     <coordinates>
@@ -355,12 +352,11 @@ has v</panel_attributes>
 + text: String {NotBlank}</panel_attributes>
     <additional_attributes/>
   </element>
-  
   <element>
     <id>UMLClass</id>
     <coordinates>
       <x>448</x>
-      <y>343</y>
+      <y>476</y>
       <w>371</w>
       <h>126</h>
     </coordinates>
@@ -377,7 +373,6 @@ has v</panel_attributes>
 + stars: Integer {Size(min=0, max=5)</panel_attributes>
     <additional_attributes/>
   </element>
-  
   <element>
     <id>UMLClass</id>
     <coordinates>
@@ -390,9 +385,8 @@ has v</panel_attributes>
 --
 + spamWords : List&lt;String&gt; {NotNull}
 + Threshold : Double {NotNull}</panel_attributes>
- <additional_attributes/>
+    <additional_attributes/>
   </element>
-  
   <element>
     <id>UMLClass</id>
     <coordinates>
