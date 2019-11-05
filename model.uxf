@@ -352,7 +352,27 @@ has v</panel_attributes>
 + text: String {NotBlank}</panel_attributes>
     <additional_attributes/>
   </element>
+  
   <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>483</x>
+      <y>413</y>
+      <w>252</w>
+      <h>84</h>
+    </coordinates>
+    <panel_attributes>Requests
+--
++ title: String {NotBlank}
++ moment: Date{Temporal(TIMESTAMP), Past}
++ deadline Date{Temporal(TIMESTAMP), Future}
++ description: String {NotBlank}
++ reward: String {NotBlank}
++ ticker String{NotBlank, Pattern(regexp = "R\\w{4}\\-\\d{5}")}</panel_attributes>
+<additional_attributes/>
+  </element>
+
+ <element>
     <id>UMLClass</id>
     <coordinates>
       <x>448</x>
@@ -373,6 +393,7 @@ has v</panel_attributes>
 + stars: Integer {Size(min=0, max=5)</panel_attributes>
     <additional_attributes/>
   </element>
+
   <element>
     <id>UMLClass</id>
     <coordinates>
@@ -387,6 +408,7 @@ has v</panel_attributes>
 + Threshold : Double {NotNull}</panel_attributes>
     <additional_attributes/>
   </element>
+
   <element>
     <id>UMLClass</id>
     <coordinates>

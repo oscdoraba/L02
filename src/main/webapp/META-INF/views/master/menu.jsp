@@ -46,6 +46,8 @@
 			<acme:menu-suboption code="master.menu.provider.companyRecords" action="/authenticated/companyRecord/list"/>
 			<acme:menu-separator/>
 			<acme:menu-suboption code="master.menu.provider.investor" action="/authenticated/investor/list"/>
+      <acme:menu-separator/>
+			<acme:menu-suboption code="master.menu.provider.requests" action="/authenticated/requests/list"/>
 		</acme:menu-option>
 
 		<acme:menu-option code="master.menu.consumer" access="hasRole('Consumer')">
@@ -56,6 +58,8 @@
 			<acme:menu-suboption code="master.menu.consumer.companyRecords" action="/authenticated/companyRecord/list"/>
 			<acme:menu-separator/>
 			<acme:menu-suboption code="master.menu.consumer.investor" action="/authenticated/investor/list"/>
+      <acme:menu-separator/>
+			<acme:menu-suboption code="master.menu.consumer.requests" action="/authenticated/requests/list"/>
 		</acme:menu-option>
 		
 	</acme:menu-left>
