@@ -30,8 +30,8 @@ master.menu.sign-out = Salir
 master.menu.anonymous = Anónimo
 master.menu.anonymous.favourite-link = Enlace favorito
 master.menu.anonymous.announcement = Listar Anuncios
-master.menu.anonymous.investor = Listar Investor Records
-master.menu.anonymous.companyRecords = Listar compañias
+master.menu.anonymous.investor = Listar Investigadores
+master.menu.anonymous.companyRecords = Listar Compañias
 
 # master.menu.administrator ###################################################
 
@@ -52,6 +52,7 @@ master.menu.provider.announcement = Listar Anuncios
 master.menu.provider.companyRecords = Listar Compañias
 master.menu.provider.requests = Listar Solicitaciones
 master.menu.provider.offer = Listar Ofertas
+master.menu.provider.challenges= Listar Desafios
 
 
 # master.menu.consumer ##########################################################
@@ -63,6 +64,7 @@ master.menu.consumer.announcement = Listar Anuncios
 master.menu.consumer.companyRecords = Listar Compañias
 master.menu.consumer.requests = Listar Solicitaciones 
 master.menu.consumer.offer = Listar Ofertas
+master.menu.consumer.challenges= Listar Desafios
 
 
 # master.menu.user-account ####################################################
