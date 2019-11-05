@@ -49,8 +49,9 @@ master.menu.provider = Proveedor
 master.menu.provider.favourite-link = Enlace favorito
 master.menu.provider.investor = Listar Investigadores
 master.menu.provider.announcement = Listar Anuncios
-master.menu.provider.companyRecords = Listar compañias
+master.menu.provider.companyRecords = Listar Compañias
 master.menu.provider.requests = Listar Solicitaciones
+master.menu.provider.offer = Listar Ofertas
 
 
 # master.menu.consumer ##########################################################
@@ -59,8 +60,10 @@ master.menu.consumer = Consumidor
 master.menu.consumer.favourite-link = Enlace favorito
 master.menu.consumer.investor = Listar Investigadores
 master.menu.consumer.announcement = Listar Anuncios
-master.menu.consumer.companyRecords = Listar compañias
+master.menu.consumer.companyRecords = Listar Compañias
 master.menu.consumer.requests = Listar Solicitaciones 
+master.menu.consumer.offer = Listar Ofertas
+
 
 # master.menu.user-account ####################################################
 
@@ -70,7 +73,6 @@ master.menu.user-account.provider = Datos de proveedor
 master.menu.user-account.become-provider = Hazte proveedor
 master.menu.user-account.consumer = Datos de consumidor
 master.menu.user-account.become-consumer = Hazte consumidor
-master.menu.user-account.investor= Listar Investigadores
 
 ﻿# master.footer ###############################################################
 

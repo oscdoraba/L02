@@ -50,6 +50,7 @@ master.menu.provider.investor = List Investor
 master.menu.provider.announcement = List Announcement
 master.menu.provider.companyRecords = List Company Records 
 master.menu.provider.requests = List Requests
+master.menu.provider.offer = List Offers
 
 
 # master.menu.consumer ##########################################################
@@ -60,6 +61,7 @@ master.menu.consumer.announcement = List Announcement
 master.menu.consumer.investor = List Investor
 master.menu.consumer.companyRecords = List Company Records 
 master.menu.consumer.requests = List Requests
+master.menu.consumer.offer = List Offers
 
 
 # master.menu.user-account ####################################################
