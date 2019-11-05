@@ -446,3 +446,28 @@ has v</panel_attributes>
 </panel_attributes>
     <additional_attributes/>
   </element>
+
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>170</x>
+      <y>495</y>
+      <w>200</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>Challenge
+
+--
++ title: String {NotBlank}
++ deadline: Date {Temporal (TIMESTAMP), Future}
++ description : String {NotBlank}
++ goal1: String {NotBlank}
++ goal2: String {NotBlank}
++ goal3: String {NotBlank}
++ reward1: String {NotBlank}
++ reward2: String {NotBlank}
++ reward3: String {NotBlank}
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>

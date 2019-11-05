@@ -50,6 +50,8 @@
 			<acme:menu-suboption code="master.menu.provider.requests" action="/authenticated/requests/list"/>
       <acme:menu-separator/>
       <acme:menu-suboption code="master.menu.provider.offer" action="/authenticated/offer/list"/>
+      <acme:menu-separator/>
+			<acme:menu-suboption code="master.menu.provider.challenges" action="/authenticated/challenges/list"/>
 
 		</acme:menu-option>
 
@@ -65,6 +67,8 @@
 			<acme:menu-suboption code="master.menu.consumer.requests" action="/authenticated/requests/list"/>
       <acme:menu-separator/>
       <acme:menu-suboption code="master.menu.consumer.offer" action="/authenticated/offer/list"/>
+      <acme:menu-separator/>
+			<acme:menu-suboption code="master.menu.consumer.challenges" action="/authenticated/challenges/list"/>
 		</acme:menu-option>
 		
 	</acme:menu-left>
@@ -84,3 +88,4 @@
 		<acme:menu-option code="master.menu.sign-out" action="/master/sign-out" access="isAuthenticated()"/>
 	</acme:menu-right>
 </acme:menu-bar>
+

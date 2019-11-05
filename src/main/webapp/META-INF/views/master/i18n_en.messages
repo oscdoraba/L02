@@ -51,7 +51,7 @@ master.menu.provider.announcement = List Announcement
 master.menu.provider.companyRecords = List Company Records 
 master.menu.provider.requests = List Requests
 master.menu.provider.offer = List Offers
-
+master.menu.provider.challenges= List Challenges
 
 # master.menu.consumer ##########################################################
 
@@ -62,7 +62,7 @@ master.menu.consumer.investor = List Investor
 master.menu.consumer.companyRecords = List Company Records 
 master.menu.consumer.requests = List Requests
 master.menu.consumer.offer = List Offers
-
+master.menu.consumer.challenges= List Challenges
 
 # master.menu.user-account ####################################################
 
@@ -110,3 +110,4 @@ master.license.text = \
 	automatically for a maximum of 31 days, and "language" to store your language \
 	preferences. Additionally, we store an item called "returnStack" in your browser's \
 	local storage to keep track of the document to which some buttons must return.
+

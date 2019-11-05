@@ -184,4 +184,40 @@
 	<property name="ticker" value="OKLMN-99999"/>
 </bean> 
   
+<bean id="challenge01" class="acme.entities.challenges.Challenges">
+	<property name="title" value="Competicion de ajedrez"/>
+	<property name="moment" value="2020/07/07 19:10"/>
+	<property name="description" value="premios"/>
+	<property name="goal1" value="ganar la competencia"/>
+	<property name="reward1" value="una medalla de oro"/>
+	<property name="goal2" value="quedar segundo"/>
+	<property name="reward2" value="una medalla de plata"/>
+	<property name="goal3" value="quedar tercero"/>
+	<property name="reward3" value="una medalla de plata"/>
+</bean>
+  
+<bean id="challenge02" class="acme.entities.challenges.Challenges">
+	<property name="title" value="Competicion de baloncesto"/>
+	<property name="moment" value="2020/07/07 19:10"/>
+	<property name="description" value="premios"/>
+	<property name="goal1" value="ganar la competencia"/>
+	<property name="reward1" value="una medalla de oro"/>
+	<property name="goal2" value="quedar segundo"/>
+	<property name="reward2" value="una medalla de plata"/>
+	<property name="goal3" value="quedar tercero"/>
+	<property name="reward3" value="una medalla de plata"/>
+</bean>
+  
+<bean id="challenge03" class="acme.entities.challenges.Challenges">
+	<property name="title" value="Competicion de futbol"/>
+	<property name="moment" value="2020/07/07 19:10"/>
+	<property name="description" value="premios"/>
+	<property name="goal1" value="ganar la competencia"/>
+	<property name="reward1" value="una medalla de oro"/>
+	<property name="goal2" value="quedar segundo"/>
+	<property name="reward2" value="una medalla de plata"/>
+	<property name="goal3" value="quedar tercero"/>
+	<property name="reward3" value="una medalla de plata"/>
+</bean>  
+  
 </beans>

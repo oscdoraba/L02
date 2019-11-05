@@ -124,33 +124,6 @@ INSERT INTO `authenticated` VALUES (5,0,3);
 UNLOCK TABLES;
 
 --
--- Table structure for table `calle_perez_bulletin`
---
-
-DROP TABLE IF EXISTS `calle_perez_bulletin`;
-/*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
-CREATE TABLE `calle_perez_bulletin` (
-  `id` int(11) NOT NULL,
-  `version` int(11) NOT NULL,
-  `author` varchar(255) DEFAULT NULL,
-  `body` varchar(255) DEFAULT NULL,
-  `moment` datetime(6) DEFAULT NULL,
-  `title` varchar(255) DEFAULT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
-/*!40101 SET character_set_client = @saved_cs_client */;
-
---
--- Dumping data for table `calle_perez_bulletin`
---
-
-LOCK TABLES `calle_perez_bulletin` WRITE;
-/*!40000 ALTER TABLE `calle_perez_bulletin` DISABLE KEYS */;
-/*!40000 ALTER TABLE `calle_perez_bulletin` ENABLE KEYS */;
-UNLOCK TABLES;
-
---
 -- Table structure for table `campos_iglesia_bulletin`
 --
 
@@ -174,7 +147,36 @@ CREATE TABLE `campos_iglesia_bulletin` (
 
 LOCK TABLES `campos_iglesia_bulletin` WRITE;
 /*!40000 ALTER TABLE `campos_iglesia_bulletin` DISABLE KEYS */;
+INSERT INTO `campos_iglesia_bulletin` VALUES (10,0,10,'Sevilla','1996-08-22 03:00:00.000000','Adidas'),(11,0,10,'SevillaFC','2019-10-22 16:03:55.074000','Adidas');
 /*!40000 ALTER TABLE `campos_iglesia_bulletin` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `challenges`
+--
+
+DROP TABLE IF EXISTS `challenges`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `challenges` (
+  `id` int(11) NOT NULL,
+  `version` int(11) NOT NULL,
+  `deadline` datetime(6) DEFAULT NULL,
+  `description` varchar(255) DEFAULT NULL,
+  `goal_reward` varchar(255) DEFAULT NULL,
+  `level` varchar(255) DEFAULT NULL,
+  `title` varchar(255) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `challenges`
+--
+
+LOCK TABLES `challenges` WRITE;
+/*!40000 ALTER TABLE `challenges` DISABLE KEYS */;
+/*!40000 ALTER TABLE `challenges` ENABLE KEYS */;
 UNLOCK TABLES;
 
 --
@@ -203,61 +205,6 @@ CREATE TABLE `consumer` (
 LOCK TABLES `consumer` WRITE;
 /*!40000 ALTER TABLE `consumer` DISABLE KEYS */;
 /*!40000 ALTER TABLE `consumer` ENABLE KEYS */;
-UNLOCK TABLES;
-
---
--- Table structure for table `dorado_abadias_bulletin`
---
-
-DROP TABLE IF EXISTS `dorado_abadias_bulletin`;
-/*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
-CREATE TABLE `dorado_abadias_bulletin` (
-  `id` int(11) NOT NULL,
-  `version` int(11) NOT NULL,
-  `author` varchar(255) DEFAULT NULL,
-  `oid` int(11) DEFAULT NULL,
-  `text` varchar(255) DEFAULT NULL,
-  `uri` varchar(255) DEFAULT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
-/*!40101 SET character_set_client = @saved_cs_client */;
-
---
--- Dumping data for table `dorado_abadias_bulletin`
---
-
-LOCK TABLES `dorado_abadias_bulletin` WRITE;
-/*!40000 ALTER TABLE `dorado_abadias_bulletin` DISABLE KEYS */;
-/*!40000 ALTER TABLE `dorado_abadias_bulletin` ENABLE KEYS */;
-UNLOCK TABLES;
-
---
--- Table structure for table `ganan_garcia_bulletin`
---
-
-DROP TABLE IF EXISTS `ganan_garcia_bulletin`;
-/*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
-CREATE TABLE `ganan_garcia_bulletin` (
-  `id` int(11) NOT NULL,
-  `version` int(11) NOT NULL,
-  `dorsal` int(11) DEFAULT NULL,
-  `fecha_inscripcion` datetime(6) DEFAULT NULL,
-  `goles` int(11) DEFAULT NULL,
-  `nombre` varchar(255) DEFAULT NULL,
-  `partidos_jugados` int(11) DEFAULT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
-/*!40101 SET character_set_client = @saved_cs_client */;
-
---
--- Dumping data for table `ganan_garcia_bulletin`
---
-
-LOCK TABLES `ganan_garcia_bulletin` WRITE;
-/*!40000 ALTER TABLE `ganan_garcia_bulletin` DISABLE KEYS */;
-/*!40000 ALTER TABLE `ganan_garcia_bulletin` ENABLE KEYS */;
 UNLOCK TABLES;
 
 --
@@ -321,8 +268,8 @@ CREATE TABLE `sanchez_munoz_bulletin` (
   `id` int(11) NOT NULL,
   `version` int(11) NOT NULL,
   `author` varchar(255) DEFAULT NULL,
-  `country` varchar(255) DEFAULT NULL,
-  `quality` int(11) DEFAULT NULL,
+  `moment` datetime(6) DEFAULT NULL,
+  `text` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
@@ -333,6 +280,7 @@ CREATE TABLE `sanchez_munoz_bulletin` (
 
 LOCK TABLES `sanchez_munoz_bulletin` WRITE;
 /*!40000 ALTER TABLE `sanchez_munoz_bulletin` DISABLE KEYS */;
+INSERT INTO `sanchez_munoz_bulletin` VALUES (9,0,'Luis Manuel Sanchez Munoz','2019-09-09 08:00:00.000000','Bulletin test.');
 /*!40000 ALTER TABLE `sanchez_munoz_bulletin` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -359,6 +307,7 @@ CREATE TABLE `shout` (
 
 LOCK TABLES `shout` WRITE;
 /*!40000 ALTER TABLE `shout` DISABLE KEYS */;
+INSERT INTO `shout` VALUES (6,0,'Jhon Doe','2019-09-09 08:00:00.000000','I\'m happy'),(7,0,'Jhon A','2019-09-09 08:00:00.000000','I\'m sad'),(8,0,'Jhon B','2019-09-09 08:00:00.000000','I\'m not happy');
 /*!40000 ALTER TABLE `shout` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -389,7 +338,7 @@ CREATE TABLE `user_account` (
 
 LOCK TABLES `user_account` WRITE;
 /*!40000 ALTER TABLE `user_account` DISABLE KEYS */;
-INSERT INTO `user_account` VALUES (1,0,_binary '\0','john.doe@acme.com','John','Doe','$2a$05$6C1yau0qTyrMBFtVFtEdwub0dLVhZ2ZUcX9e2eOUJ0zkRSRracLyq','anonymous'),(3,0,_binary '','administrator@acme.com','Administrator','Acme.com','$2a$05$s6JbpBcKxqkGtsDezJzmOOGsz/P4dYej/e4CmN5n5XQMXPeOTAkJO','administrator');
+INSERT INTO `user_account` VALUES (1,0,_binary '\0','john.doe@acme.com','John','Doe','$2a$05$IiQm9x3pKGQeqY6dGHoIyOeSOCgkPEjVU4WG5M/FTqipgRDs7hj3S','anonymous'),(3,0,_binary '','administrator@acme.com','Administrator','Acme.com','$2a$05$mODzPe03JEA9l1jAUPElAOVbEHGmDdW0unkdcPaTfQSooDk1zfbjK','administrator');
 /*!40000 ALTER TABLE `user_account` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -402,4 +351,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2019-10-30 13:17:29
+-- Dump completed on 2019-11-04 16:26:00
