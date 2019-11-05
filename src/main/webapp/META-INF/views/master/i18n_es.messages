@@ -29,23 +29,41 @@ master.menu.sign-out = Salir
 
 master.menu.anonymous = Anónimo
 master.menu.anonymous.favourite-link = Enlace favorito
+master.menu.anonymous.announcement = Listar Anuncios
+master.menu.anonymous.investor = Listar Investor Records
+master.menu.anonymous.companyRecords = Listar compañias
 
 # master.menu.administrator ###################################################
 
 master.menu.administrator = Administrador
 master.menu.administrator.user-accounts = Cuentas de usuario
-master.menu.administrator.shutdown = Parar el sistema
 master.menu.administrator.announcement = Listar Anuncios
+master.menu.administrator.investor = Listar Investigadores
+master.menu.administrator.companyRecords = Listar compañias
+master.menu.administrator.customisationParameters = Parametros de personalización
+master.menu.administrator.shutdown = Parar el sistema
 
 # master.menu.provider ########################################################
 
 master.menu.provider = Proveedor
 master.menu.provider.favourite-link = Enlace favorito
+master.menu.provider.investor = Listar Investigadores
+master.menu.provider.announcement = Listar Anuncios
+master.menu.provider.companyRecords = Listar Compañias
+master.menu.provider.requests = Listar Solicitaciones
+master.menu.provider.offer = Listar Ofertas
+
 
 # master.menu.consumer ##########################################################
 
 master.menu.consumer = Consumidor
 master.menu.consumer.favourite-link = Enlace favorito
+master.menu.consumer.investor = Listar Investigadores
+master.menu.consumer.announcement = Listar Anuncios
+master.menu.consumer.companyRecords = Listar Compañias
+master.menu.consumer.requests = Listar Solicitaciones 
+master.menu.consumer.offer = Listar Ofertas
+
 
 # master.menu.user-account ####################################################
 
