@@ -10,13 +10,13 @@
 
 # master.banner.welcome #######################################################
 
-master.banner.background = #FFE97F 
+master.banner.background = #FFFFFF 
 
 # master.welcome ##############################################################
 
 master.welcome.title = Welcome!
 master.welcome.text = \
-	Welcome to Acme-Jobs!
+	Welcome to Team-Master Project!
 # master.menu #################################################################
 
 master.menu.home = Home
@@ -89,25 +89,17 @@ master.footer.label.spanish = Spanish
 
 # master.company ##############################################################
 
-master.company.title = La compañía
+master.company.title = Ring Company
 master.company.text = \
-	Starter Project, Inc. is a fictitious fictitious company that provides a \
-	starter project for the students of the Design and Testing subject of the \
+	Team Master Project, Inc. is a fictitious fictitious company that provides a \
+	team master project for the students of the Design and Testing subject of the \
 	Software Engineering Curriculum of the University of Sevilla.
-master.company.name = Starter Project, Inc.
-master.company.address = Number Street, City, State, Country
+master.company.name = Team Master Project, Inc.
+master.company.address = Av. Reina Mercedes
 master.company.phone = +000 123 456
-master.company.email = contact@acme.com
+master.company.email = teammasterpldh@gmail.com
 
 # master.license ##############################################################
 
-master.license.title = License
-master.license.text = \
-	You may use this system free of charge, as long as you carefully observe the \
-	existing applicable laws.  Please, note that we do not share any information \
-	about you with any other company.  We only use three cookies, namely: \
-	"JSESSIONID" to identify your work session, "remember" to let you authenticate \
-	automatically for a maximum of 31 days, and "language" to store your language \
-	preferences. Additionally, we store an item called "returnStack" in your browser's \
-	local storage to keep track of the document to which some buttons must return.
-
+master.license.title = License for Team Master
+master.license.text = Team Master License Text
