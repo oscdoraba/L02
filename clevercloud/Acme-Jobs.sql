@@ -125,6 +125,34 @@ INSERT INTO `authenticated` VALUES (5,0,3);
 UNLOCK TABLES;
 
 --
+-- Table structure for table `campos_iglesia_bulletin`
+--
+
+DROP TABLE IF EXISTS `campos_iglesia_bulletin`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `campos_iglesia_bulletin` (
+  `id` int(11) NOT NULL,
+  `version` int(11) NOT NULL,
+  `dorsal` int(11) DEFAULT NULL,
+  `equipo` varchar(255) DEFAULT NULL,
+  `nacimiento` datetime(6) DEFAULT NULL,
+  `patrocinador` varchar(255) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `campos_iglesia_bulletin`
+--
+
+LOCK TABLES `campos_iglesia_bulletin` WRITE;
+/*!40000 ALTER TABLE `campos_iglesia_bulletin` DISABLE KEYS */;
+INSERT INTO `campos_iglesia_bulletin` VALUES (10,0,10,'Sevilla','1996-08-22 03:00:00.000000','Adidas'),(11,0,10,'SevillaFC','2019-10-22 16:03:55.074000','Adidas');
+/*!40000 ALTER TABLE `campos_iglesia_bulletin` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
 -- Table structure for table `challenges`
 --
 
@@ -242,35 +270,6 @@ LOCK TABLES `customisation_parameters` WRITE;
 /*!40000 ALTER TABLE `customisation_parameters` DISABLE KEYS */;
 INSERT INTO `customisation_parameters` VALUES (14,0,_binary '¨\Ì\0sr\0java.util.ArrayListxÅ\“ô\«aù\0I\0sizexp\0\0\0w\0\0\0t\0sext\0	hard coret\0viagrat\0cialist\0nigeriat\0\nyou\'ve wont\0million dollart\0sexot\0duroq\0~\0q\0~\0q\0~\0t\0\nhas ganadot\0millon de dollaresx',1);
 /*!40000 ALTER TABLE `customisation_parameters` ENABLE KEYS */;
-UNLOCK TABLES;
-
---
--- Table structure for table `ganan_garcia_bulletin`
---
-
-DROP TABLE IF EXISTS `ganan_garcia_bulletin`;
-/*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
-CREATE TABLE `ganan_garcia_bulletin` (
-  `id` int(11) NOT NULL,
-  `version` int(11) NOT NULL,
-  `dorsal` int(11) DEFAULT NULL,
-  `fecha_inscripcion` datetime(6) DEFAULT NULL,
-  `goles` int(11) DEFAULT NULL,
-  `nombre` varchar(255) DEFAULT NULL,
-  `partidos_jugados` int(11) DEFAULT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
-/*!40101 SET character_set_client = @saved_cs_client */;
-
---
--- Dumping data for table `ganan_garcia_bulletin`
---
-
-LOCK TABLES `ganan_garcia_bulletin` WRITE;
-/*!40000 ALTER TABLE `ganan_garcia_bulletin` DISABLE KEYS */;
-INSERT INTO `ganan_garcia_bulletin` VALUES (10,0,10,'2019-08-09 08:00:00.000000',250,'David Ganan Garcia',200);
-/*!40000 ALTER TABLE `ganan_garcia_bulletin` ENABLE KEYS */;
 UNLOCK TABLES;
 
 --
@@ -493,7 +492,7 @@ CREATE TABLE `user_account` (
 
 LOCK TABLES `user_account` WRITE;
 /*!40000 ALTER TABLE `user_account` DISABLE KEYS */;
-INSERT INTO `user_account` VALUES (1,0,_binary '\0','john.doe@acme.com','John','Doe','$2a$05$50bXEdFg9CY1645/oPZXuOl5Xis8AmO/JP/Ym0iEQliJr4eJYUGZy','anonymous'),(3,0,_binary '','administrator@acme.com','Administrator','Acme.com','$2a$05$VW821IJTHibYrEUBvcw8/OX6t0mUQAF9cm3QVJBYj7Lq0l0k0Rs9W','administrator');
+INSERT INTO `user_account` VALUES (1,0,_binary '\0','john.doe@acme.com','John','Doe','$2a$05$3fcTatO/n6scTngm2IA9ZePcHmEAeKdzfR.oslmGzc1Zv.k4As7qi','anonymous'),(3,0,_binary '','administrator@acme.com','Administrator','Acme.com','$2a$05$Gi3gSwWSszady8oUxqtepeZeiltOJnstf9Quv2XiAHpc9YHxduP.i','administrator');
 /*!40000 ALTER TABLE `user_account` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -506,4 +505,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2019-11-06 16:56:32
+-- Dump completed on 2019-11-06 18:29:33
