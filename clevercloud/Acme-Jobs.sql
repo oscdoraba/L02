@@ -125,6 +125,33 @@ INSERT INTO `authenticated` VALUES (5,0,3);
 UNLOCK TABLES;
 
 --
+-- Table structure for table `calle_perez_bulletin`
+--
+
+DROP TABLE IF EXISTS `calle_perez_bulletin`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `calle_perez_bulletin` (
+  `id` int(11) NOT NULL,
+  `version` int(11) NOT NULL,
+  `author` varchar(255) DEFAULT NULL,
+  `body` varchar(255) DEFAULT NULL,
+  `moment` datetime(6) DEFAULT NULL,
+  `title` varchar(255) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `calle_perez_bulletin`
+--
+
+LOCK TABLES `calle_perez_bulletin` WRITE;
+/*!40000 ALTER TABLE `calle_perez_bulletin` DISABLE KEYS */;
+/*!40000 ALTER TABLE `calle_perez_bulletin` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
 -- Table structure for table `campos_iglesia_bulletin`
 --
 
@@ -148,7 +175,6 @@ CREATE TABLE `campos_iglesia_bulletin` (
 
 LOCK TABLES `campos_iglesia_bulletin` WRITE;
 /*!40000 ALTER TABLE `campos_iglesia_bulletin` DISABLE KEYS */;
-INSERT INTO `campos_iglesia_bulletin` VALUES (10,0,10,'Sevilla','1996-08-22 03:00:00.000000','Adidas'),(11,0,10,'SevillaFC','2019-10-22 16:03:55.074000','Adidas');
 /*!40000 ALTER TABLE `campos_iglesia_bulletin` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -268,8 +294,63 @@ CREATE TABLE `customisation_parameters` (
 
 LOCK TABLES `customisation_parameters` WRITE;
 /*!40000 ALTER TABLE `customisation_parameters` DISABLE KEYS */;
-INSERT INTO `customisation_parameters` VALUES (14,0,_binary '�\�\0sr\0java.util.ArrayListx�\��\�a�\0I\0sizexp\0\0\0w\0\0\0t\0sext\0	hard coret\0viagrat\0cialist\0nigeriat\0\nyou\'ve wont\0million dollart\0sexot\0duroq\0~\0q\0~\0q\0~\0t\0\nhas ganadot\0millon de dollaresx',1);
+INSERT INTO `customisation_parameters` VALUES (14,0,_binary '¬\í\0sr\0java.util.ArrayListx\Ò™\Ça\0I\0sizexp\0\0\0w\0\0\0t\0sext\0	hard coret\0viagrat\0cialist\0nigeriat\0\nyou\'ve wont\0million dollart\0sexot\0duroq\0~\0q\0~\0q\0~\0t\0\nhas ganadot\0millon de dollaresx',1);
 /*!40000 ALTER TABLE `customisation_parameters` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `dorado_abadias_bulletin`
+--
+
+DROP TABLE IF EXISTS `dorado_abadias_bulletin`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `dorado_abadias_bulletin` (
+  `id` int(11) NOT NULL,
+  `version` int(11) NOT NULL,
+  `author` varchar(255) DEFAULT NULL,
+  `oid` int(11) DEFAULT NULL,
+  `text` varchar(255) DEFAULT NULL,
+  `uri` varchar(255) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `dorado_abadias_bulletin`
+--
+
+LOCK TABLES `dorado_abadias_bulletin` WRITE;
+/*!40000 ALTER TABLE `dorado_abadias_bulletin` DISABLE KEYS */;
+/*!40000 ALTER TABLE `dorado_abadias_bulletin` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `ganan_garcia_bulletin`
+--
+
+DROP TABLE IF EXISTS `ganan_garcia_bulletin`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `ganan_garcia_bulletin` (
+  `id` int(11) NOT NULL,
+  `version` int(11) NOT NULL,
+  `dorsal` int(11) DEFAULT NULL,
+  `fecha_inscripcion` datetime(6) DEFAULT NULL,
+  `goles` int(11) DEFAULT NULL,
+  `nombre` varchar(255) DEFAULT NULL,
+  `partidos_jugados` int(11) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `ganan_garcia_bulletin`
+--
+
+LOCK TABLES `ganan_garcia_bulletin` WRITE;
+/*!40000 ALTER TABLE `ganan_garcia_bulletin` DISABLE KEYS */;
+/*!40000 ALTER TABLE `ganan_garcia_bulletin` ENABLE KEYS */;
 UNLOCK TABLES;
 
 --
@@ -323,6 +404,62 @@ INSERT INTO `investor` VALUES (15,0,'Michael Jordan','Futbol',3,'En proceso de e
 UNLOCK TABLES;
 
 --
+-- Table structure for table `investor_records`
+--
+
+DROP TABLE IF EXISTS `investor_records`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `investor_records` (
+  `id` int(11) NOT NULL,
+  `version` int(11) NOT NULL,
+  `name` varchar(255) DEFAULT NULL,
+  `sector` varchar(255) DEFAULT NULL,
+  `stars` int(11) DEFAULT NULL,
+  `statement` varchar(255) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `investor_records`
+--
+
+LOCK TABLES `investor_records` WRITE;
+/*!40000 ALTER TABLE `investor_records` DISABLE KEYS */;
+INSERT INTO `investor_records` VALUES (9,0,'Michael Jordan','Football',3,'En proceso de estudio');
+/*!40000 ALTER TABLE `investor_records` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `investorrecords`
+--
+
+DROP TABLE IF EXISTS `investorrecords`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `investorrecords` (
+  `id` int(11) NOT NULL,
+  `version` int(11) NOT NULL,
+  `name` varchar(255) DEFAULT NULL,
+  `sector` varchar(255) DEFAULT NULL,
+  `stars` int(11) DEFAULT NULL,
+  `statement` varchar(255) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `investorrecords`
+--
+
+LOCK TABLES `investorrecords` WRITE;
+/*!40000 ALTER TABLE `investorrecords` DISABLE KEYS */;
+INSERT INTO `investorrecords` VALUES (9,0,'Michael Jordan','Football',3,'En proceso de estudio');
+/*!40000 ALTER TABLE `investorrecords` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
 -- Table structure for table `offer`
 --
 
@@ -349,7 +486,7 @@ CREATE TABLE `offer` (
 
 LOCK TABLES `offer` WRITE;
 /*!40000 ALTER TABLE `offer` DISABLE KEYS */;
-INSERT INTO `offer` VALUES (20,0,'2019-11-10 06:35:00.000000','This is the description of the offer 01 made by DAGA','2019-06-10 07:35:00.000000',103.3,'€','OBCDX-99699','Sample offer 01'),(21,0,'2019-11-07 06:15:00.000000','This is the description of the offer 02 made by DAGA','2019-06-10 06:25:00.000000',300.3,'€','ODDDD-73458','Sample offer 02'),(22,0,'2019-11-10 07:40:00.000000','This is the description of the offer 03 made by DAGA','2019-06-10 04:27:00.000000',200.5,'€','OKLMN-99999','Sample offer 03');
+INSERT INTO `offer` VALUES (20,0,'2019-11-10 06:35:00.000000','This is the description of the offer 01 made by DAGA','2019-06-10 07:35:00.000000',103.3,'â‚¬','OBCDX-99699','Sample offer 01'),(21,0,'2019-11-07 06:15:00.000000','This is the description of the offer 02 made by DAGA','2019-06-10 06:25:00.000000',300.3,'â‚¬','ODDDD-73458','Sample offer 02'),(22,0,'2019-11-10 07:40:00.000000','This is the description of the offer 03 made by DAGA','2019-06-10 04:27:00.000000',200.5,'â‚¬','OKLMN-99999','Sample offer 03');
 /*!40000 ALTER TABLE `offer` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -422,8 +559,8 @@ CREATE TABLE `sanchez_munoz_bulletin` (
   `id` int(11) NOT NULL,
   `version` int(11) NOT NULL,
   `author` varchar(255) DEFAULT NULL,
-  `moment` datetime(6) DEFAULT NULL,
-  `text` varchar(255) DEFAULT NULL,
+  `country` varchar(255) DEFAULT NULL,
+  `quality` int(11) DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
@@ -434,7 +571,6 @@ CREATE TABLE `sanchez_munoz_bulletin` (
 
 LOCK TABLES `sanchez_munoz_bulletin` WRITE;
 /*!40000 ALTER TABLE `sanchez_munoz_bulletin` DISABLE KEYS */;
-INSERT INTO `sanchez_munoz_bulletin` VALUES (9,0,'Luis Manuel Sanchez Munoz','2019-09-09 08:00:00.000000','Bulletin test.');
 /*!40000 ALTER TABLE `sanchez_munoz_bulletin` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -461,7 +597,6 @@ CREATE TABLE `shout` (
 
 LOCK TABLES `shout` WRITE;
 /*!40000 ALTER TABLE `shout` DISABLE KEYS */;
-INSERT INTO `shout` VALUES (6,0,'Jhon Doe','2019-09-09 08:00:00.000000','I\'m happy'),(7,0,'Jhon A','2019-09-09 08:00:00.000000','I\'m sad'),(8,0,'Jhon B','2019-09-09 08:00:00.000000','I\'m not happy');
 /*!40000 ALTER TABLE `shout` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -492,7 +627,7 @@ CREATE TABLE `user_account` (
 
 LOCK TABLES `user_account` WRITE;
 /*!40000 ALTER TABLE `user_account` DISABLE KEYS */;
-INSERT INTO `user_account` VALUES (1,0,_binary '\0','john.doe@acme.com','John','Doe','$2a$05$3fcTatO/n6scTngm2IA9ZePcHmEAeKdzfR.oslmGzc1Zv.k4As7qi','anonymous'),(3,0,_binary '','administrator@acme.com','Administrator','Acme.com','$2a$05$Gi3gSwWSszady8oUxqtepeZeiltOJnstf9Quv2XiAHpc9YHxduP.i','administrator');
+INSERT INTO `user_account` VALUES (1,0,_binary '\0','john.doe@acme.com','John','Doe','$2a$05$lHTtbMw5DLhUFnQwbCctqOSrrau0taqqQ4t4iyxOcZRg3bIha1EGC','anonymous'),(3,0,_binary '','administrator@acme.com','Administrator','Acme.com','$2a$05$qk5bSbHB4yyI2c/2dMnRuOMhP4nV6Dq5cZ5/9krRj3oz7hGLZ8q/u','administrator');
 /*!40000 ALTER TABLE `user_account` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -505,4 +640,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2019-11-06 18:29:33
+-- Dump completed on 2019-11-06 18:49:06
