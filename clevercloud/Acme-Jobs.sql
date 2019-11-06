@@ -66,6 +66,7 @@ CREATE TABLE `announcement` (
 
 LOCK TABLES `announcement` WRITE;
 /*!40000 ALTER TABLE `announcement` DISABLE KEYS */;
+INSERT INTO `announcement` VALUES (6,0,'2019-06-10 08:35:00.000000',NULL,'This is the description of a sample announcement','Sample announcement 01'),(7,0,'2019-06-09 22:00:00.000000','http://www.example.com','This is the description of a another announcement','Sample announcement 02'),(8,0,'1900-10-10 19:00:39.000000','http://www.example.com','This is a very old announcement','Sample very old announcement 03'),(9,0,'2019-11-01 09:35:00.000000',NULL,'This is the description of a sample announcement','Sample announcement 04'),(10,0,'2019-11-03 09:35:00.000000',NULL,'This is the description of a sample announcement','Sample announcement 05');
 /*!40000 ALTER TABLE `announcement` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -152,6 +153,7 @@ CREATE TABLE `challenges` (
 
 LOCK TABLES `challenges` WRITE;
 /*!40000 ALTER TABLE `challenges` DISABLE KEYS */;
+INSERT INTO `challenges` VALUES (23,0,'premios','ganar la competencia','quedar segundo','quedar tercero','2020-07-07 17:10:00.000000','una medalla de oro','una medalla de plata','una medalla de plata','Competicion de ajedrez'),(24,0,'premios','ganar la competencia','quedar segundo','quedar tercero','2020-07-07 17:10:00.000000','una medalla de oro','una medalla de plata','una medalla de plata','Competicion de baloncesto'),(25,0,'premios','ganar la competencia','quedar segundo','quedar tercero','2020-07-07 17:10:00.000000','una medalla de oro','una medalla de plata','una medalla de plata','Competicion de futbol');
 /*!40000 ALTER TABLE `challenges` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -184,6 +186,7 @@ CREATE TABLE `company_record` (
 
 LOCK TABLES `company_record` WRITE;
 /*!40000 ALTER TABLE `company_record` DISABLE KEYS */;
+INSERT INTO `company_record` VALUES (11,0,'Muchas cosas','Pepe','pepe@us.es',_binary '','Company record 1','+666 (6666) 666666','Tecnologia',1,'http://www.cr1.com'),(12,0,'Muchas cosas','Luis','luis@us.es',_binary '\0','Company record 2','+888 (6666) 444444444','Tecnologia B',5,'https://www.cr2.com'),(13,0,'Cosas','Luis','luis@us.es',_binary '\0','Company 3','+888 (6666) 445444444','Tecnologia C',NULL,'https://www.cr3.com');
 /*!40000 ALTER TABLE `company_record` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -237,6 +240,7 @@ CREATE TABLE `customisation_parameters` (
 
 LOCK TABLES `customisation_parameters` WRITE;
 /*!40000 ALTER TABLE `customisation_parameters` DISABLE KEYS */;
+INSERT INTO `customisation_parameters` VALUES (14,0,_binary '¨\Ì\0sr\0java.util.ArrayListxÅ\“ô\«aù\0I\0sizexp\0\0\0w\0\0\0t\0sext\0	hard coret\0viagrat\0cialist\0nigeriat\0\nyou\'ve wont\0million dollart\0sexot\0duroq\0~\0q\0~\0q\0~\0t\0\nhas ganadot\0millon de dollaresx',1);
 /*!40000 ALTER TABLE `customisation_parameters` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -287,7 +291,7 @@ CREATE TABLE `hibernate_sequence` (
 
 LOCK TABLES `hibernate_sequence` WRITE;
 /*!40000 ALTER TABLE `hibernate_sequence` DISABLE KEYS */;
-INSERT INTO `hibernate_sequence` VALUES (6);
+INSERT INTO `hibernate_sequence` VALUES (26);
 /*!40000 ALTER TABLE `hibernate_sequence` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -315,6 +319,7 @@ CREATE TABLE `investor` (
 
 LOCK TABLES `investor` WRITE;
 /*!40000 ALTER TABLE `investor` DISABLE KEYS */;
+INSERT INTO `investor` VALUES (15,0,'Michael Jordan','Futbol',3,'En proceso de estudio'),(16,0,'James Hardem','Beisbol',NULL,'En proceso de estudio');
 /*!40000 ALTER TABLE `investor` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -345,6 +350,7 @@ CREATE TABLE `offer` (
 
 LOCK TABLES `offer` WRITE;
 /*!40000 ALTER TABLE `offer` DISABLE KEYS */;
+INSERT INTO `offer` VALUES (20,0,'2019-11-10 06:35:00.000000','This is the description of the offer 01 made by DAGA','2019-06-10 07:35:00.000000',103.3,'‚Ç¨','OBCDX-99699','Sample offer 01'),(21,0,'2019-11-07 06:15:00.000000','This is the description of the offer 02 made by DAGA','2019-06-10 06:25:00.000000',300.3,'‚Ç¨','ODDDD-73458','Sample offer 02'),(22,0,'2019-11-10 07:40:00.000000','This is the description of the offer 03 made by DAGA','2019-06-10 04:27:00.000000',200.5,'‚Ç¨','OKLMN-99999','Sample offer 03');
 /*!40000 ALTER TABLE `offer` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -402,6 +408,7 @@ CREATE TABLE `requests` (
 
 LOCK TABLES `requests` WRITE;
 /*!40000 ALTER TABLE `requests` DISABLE KEYS */;
+INSERT INTO `requests` VALUES (17,0,'2020-06-10 07:30:00.000000','This is a request','2019-06-10 08:35:00.000000','One car','RXXXX-99999','Request 01'),(18,0,'2020-06-11 07:30:00.000000','This is a request','2019-06-09 22:00:00.000000','One enum','RXXXX-99999','Request 02'),(19,0,'2020-06-12 07:30:00.000000','This is a request very old','1900-10-10 19:00:39.000000','2500 dollars','RXXXX-99999','Request 03');
 /*!40000 ALTER TABLE `requests` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -486,7 +493,7 @@ CREATE TABLE `user_account` (
 
 LOCK TABLES `user_account` WRITE;
 /*!40000 ALTER TABLE `user_account` DISABLE KEYS */;
-INSERT INTO `user_account` VALUES (1,0,_binary '\0','john.doe@acme.com','John','Doe','$2a$05$whrRbd.FUXHmBSiZ2Tn6LuI.0GcR/Oal4fCmGJf1e/gZ3TiiOu/bK','anonymous'),(3,0,_binary '','administrator@acme.com','Administrator','Acme.com','$2a$05$haOReTT1D18VS1rzB3uCyufFXV99Xk9OVXTHryPY.5yLi.OK26s1e','administrator');
+INSERT INTO `user_account` VALUES (1,0,_binary '\0','john.doe@acme.com','John','Doe','$2a$05$50bXEdFg9CY1645/oPZXuOl5Xis8AmO/JP/Ym0iEQliJr4eJYUGZy','anonymous'),(3,0,_binary '','administrator@acme.com','Administrator','Acme.com','$2a$05$VW821IJTHibYrEUBvcw8/OX6t0mUQAF9cm3QVJBYj7Lq0l0k0Rs9W','administrator');
 /*!40000 ALTER TABLE `user_account` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -499,4 +506,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2019-11-05 18:45:30
+-- Dump completed on 2019-11-06 16:56:32
